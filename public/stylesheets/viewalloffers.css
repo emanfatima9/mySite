@@ -8,15 +8,16 @@ body{
 	/*background: #b300b3;*/
 
 	/*background: #e6e6e6;*/
-	background: repeating-linear-gradient(
+/*	background: repeating-linear-gradient(
   -160deg,
   #b3b3b3,
   #b3b3b3 100px,
   #e6e6e6 400px,
   #e6e6e6 20px
-);
+);*/
 	/*background-blend-mode: */
 	/*background-repeat: no-repeat;*/
+	background: #fff;
 	background-size: auto;
 }
 .topdiv{
@@ -66,17 +67,21 @@ body{
 
 .maincontainer {
 	float: right;
-	margin: 30px 0 20px 0;
+	margin: 30px 40px 20px 0;
  	/*margin: 0 auto;*/
- 	max-width: 90%;
+ 	/*min-width: 90%*/
+ 	max-width: 75%;
+ 	max-height: 80%
     padding: 10px 40px;
-    border-radius: 50px;
-	background: #87e8ff;
+    border-radius: 5px;
+	background: #fff;
 	/*background-image: url("images/bg_bd.jpg");*/
 	/*background-repeat: repeat-x;*/
 	    color: #000;
 	opacity: 0.5;
     text-shadow: none;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
 	-webkit-box-shadow: 10px 3px 5px 10px rgba(0,0,0,0.31);
 	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 	box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.31);
@@ -84,7 +89,7 @@ body{
 
 .maincontainer:hover{
 	opacity: 1;
-	background: linear-gradient(-90deg, #ccffff, #3399ff);
+	background: linear-gradient(90deg, #b3b3b3, #fff);
 	animation: shake ease-out;
 	animation-duration: 10s;
 	animation-delay: 0.2s;
@@ -117,14 +122,14 @@ body{
 }
 
 #img {
-	height: 100%;
-	width: 100%;
+	height: 75%;
+	width: 75%;
 	border-radius: 15px;
-
+	margin: 10px -10px 5px 10px;
 }
 
 .allText {
-	width: 42%;
+	width: 45%;
 	float: right;
 	display: block;
 }
@@ -132,20 +137,29 @@ body{
 
 
 .intro {
-	margin: 40px 0 0 0;
+	float: right;
+	width: 305px;
+	margin: 3% 35% 0 40%;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 2.1em;
 	text-align: center;
 	font-weight: 900;
 	display: block;
+	border-top: 4px solid;
+	border-bottom: 4px solid;
 }
 /*.topStat {
 	text-decoration: overline;
 	text-decoration-style: solid;
 }*/
+.intro h4{
+	margin-top: -25px;
+	margin-bottom: 5px;
+}
 .love {
   display: inline-block;
   position: relative;
+  margin-left: 10px;
   top: .2em;
   font-size: 2.3em;
   color: #e74c3c;
@@ -169,6 +183,7 @@ body{
 .love2 {
   display: inline-block;
   position: relative;
+  margin: 0 -35px 0 15px;
   top: .2em;
   font-size: 1.2em;
   color: #e74c3c;

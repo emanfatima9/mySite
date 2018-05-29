@@ -92,9 +92,12 @@ hr{
 }
 
 label{
+    font-size: 18px;
 	margin-bottom: 15px;
 }
-
+#uMessage{
+    max-width: 100%;
+}
 input,
 input::-webkit-input-placeholder {
     font-size: 11px;

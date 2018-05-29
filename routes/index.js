@@ -65,7 +65,28 @@ router.post('/addPost', upload.single('uImg'), function(req, res, next){
 
 
 router.get('/viewallposts', function(req, res, next){
-	res.render('viewalloffers', {});
+	try{
+
+		console.log("Getting all posts")
+		sql = `SELECT * from post`
+		db.all(sql, function(err, rows){
+			if(err){
+				return console.log("Getting posts Error" + err.message)
+			}
+			console.log("Got all posts");
+			if (rows.length == 0){
+				requests = null;
+			}
+			else {
+				requests = rows;
+			}
+			res.render('viewalloffers', {requests: requests});
+		});
+	}
+	catch(ex){
+		console.log("Internal Error: " + ex);
+		return next(ex);
+	}
 });
 
 module.exports = router;

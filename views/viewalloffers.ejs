@@ -15,41 +15,47 @@
 	</div>
 	
 
-	<div class = "intro"><h4><span class = "topStat">Made with <span class="love">♥</span></span><br>
-							<span class = "botStat">Just for -- <span class="love2">    EMAN</span></span></h4></div>
-
-	<div class = "maincontainer">
-		<div class="blur"></div>
-		<div class = "imageDiv">
-			<img src="/images/bg_bd.jpg" id = "img">
-		</div>
-		<div class = "allText">
-			<div class = "personname">
-				<h1>Final Destination - nsadfjew</h1>
-			</div>
-			<div class = "message">
-				<p>sdjkhfner fsdkwjbfvehjv wefuoerbvherjwlkc erwuibverhwfjc ewrcbwernc ewrcu werjer cuoerwbc werj cjbewr erw ceowrchewrb c
-				cnewjrbnerwhjkcberwjcb erwerc ewrjoc ewrcwejrc wer c ewrc;wer cjewrc wer cwerh cwerhc wer cwer c ewrcjb erc webjc ebwc cw
-			enc ewrnc werjnc erwhj fejrkw cerjk cerw ejrbf vcsbdvjerw ver wvcernj vclewbfnv  werbver wnb v erwbn vewr vbewrn vwerbjv webrj vv</p>
-			</div>
-		</div>
-	</div>	
-
-	<div class = "maincontainer">
-		<div class="blur"></div>
-		<div class = "imageDiv">
-			<img src="/images/bg_bd.jpg" id = "img">
-		</div>
-		<div class = "allText">
-			<div class = "personname">
-				<h1>Final Destination - nsadfjew</h1>
-			</div>
-			<div class = "message">
-				<p>sdjkhfner fsdkwjbfvehjv wefuoerbvherjwlkc erwuibverhwfjc ewrcbwernc ewrcu werjer cuoerwbc werj cjbewr erw ceowrchewrb c
-				cnewjrbnerwhjkcberwjcb erwerc ewrjoc ewrcwejrc wer c ewrc;wer cjewrc wer cwerh cwerhc wer cwer c ewrcjb erc webjc ebwc cw
-			enc ewrnc werjnc erwhj fejrkw cerjk cerw ejrbf vcsbdvjerw ver wvcernj vclewbfnv  werbver wnb v erwbn vewr vbewrn vwerbjv webrj vv</p>
-			</div>
-		</div>
+	<div class = "intro">
+		<h4><span class = "topStat">Made with <span class="love">♥</span></span><br>
+		<span class = "botStat">Just for  <span class="love2">    EMAN</span></span></h4>
 	</div>
+
+
+	<% if (requests != null) { %> 
+		<% requests.forEach(function(request){ %>
+			<div class = "maincontainer">
+				<div class="blur"></div>
+				<div class = "imageDiv">
+					<img src='/images/uploads/<%= request.image %>' id = "img">
+				</div>
+				<div class = "allText">
+					<div class = "personname">
+						<h1><%= request.name %> - <%= request.nick %></h1>
+					</div>
+					<div class = "message">
+						<p><%= request.description %></p>
+					</div>
+				</div>
+			</div>
+		<% }); %>
+	<% } else{ %>
+      <p style="color: red; margin: 10px 0 0 40px">*Sorry, no posts have been made so far.</p>
+    <% } %>
+	<!--<div class = "maincontainer">
+		<div class="blur"></div>
+		<div class = "imageDiv">
+			<img src="/images/bg_bd.jpg" id = "img">
+		</div>
+		<div class = "allText">
+			<div class = "personname">
+				<h1>Final Destination - nsadfjew</h1>
+			</div>
+			<div class = "message">
+				<p>sdjkhfner fsdkwjbfvehjv wefuoerbvherjwlkc erwuibverhwfjc ewrcbwernc ewrcu werjer cuoerwbc werj cjbewr erw ceowrchewrb c
+				cnewjrbnerwhjkcberwjcb erwerc ewrjoc ewrcwejrc wer c ewrc;wer cjewrc wer cwerh cwerhc wer cwer c ewrcjb erc webjc ebwc cw
+			enc ewrnc werjnc erwhj fejrkw cerjk cerw ejrbf vcsbdvjerw ver wvcernj vclewbfnv  werbver wnb v erwbn vewr vbewrn vwerbjv webrj vv</p>
+			</div>
+		</div>
+	</div>-->
 </body>
 </html> 
