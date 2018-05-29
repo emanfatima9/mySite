@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/addpost.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<title>Eman's Site</title>
+</head>
+<body>
+	<div class = "topdiv">
+		<ul class = "mainnav">
+			<li><a href="/addapost"><span><b>Add a Post</b></span></a></li>
+			<li><a href="/home"><span><b>Home</b></span></a></li>
+		</ul>
+	</div>
+
+	<div class="myfcontainer" id="okaybch">
+		<div class="row main">
+			<div class="main-login main-center">
+				<h1>Add a post</h1>
+					<form method="post" action="/addPost" enctype="multipart/form-data">
+						<%= message %>
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Name Pliss:</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uName" id="uName"  placeholder="Enter your Name"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Any Other Thing She Calls You:</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uNick" id="uNick"  placeholder="Enter your Username"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="message" class="cols-sm-4 control-label">Message/Post:</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uMessage" id="uMessage"  placeholder="Enter your Username"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="message" class="cols-sm-4 control-label">Upload a memory</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="file" class="form-control" name="uImg" id="uImg"  placeholder="Browse"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<button type="submit" id="submitDetails" name="submitDetails" class="btn btn-primary btn-lg btn-block login-button">Submit</button>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+</body>
+</html> 
