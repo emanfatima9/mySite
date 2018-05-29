@@ -6,7 +6,7 @@ body{
 	width: 91.5%;
 	height: 100%;
 	background-image: url("/images/bg_bd4.jpg");
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-size: auto;
 }
 .topdiv{
@@ -494,6 +494,8 @@ canvas{
 	cursor: crosshair;
 	display: block;
 	position: absolute;
+	top: 80px;
+	left: 0px;
 	width: auto;
 }
 

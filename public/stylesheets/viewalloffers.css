@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url(https://fonts.googleapis.com/css?family=Monoton);
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
 
 body{
 	/*background-color: #80e5ff;*/
@@ -67,7 +68,7 @@ body{
 
 .maincontainer {
 	float: right;
-	margin: 30px 40px 20px 0;
+	margin: 30px 120px 20px 0;
  	/*margin: 0 auto;*/
  	/*min-width: 90%*/
  	max-width: 75%;
@@ -202,4 +203,49 @@ body{
 }
 @keyframes love2 {
   to {transform: scale(1.2);}
+}
+
+.namee{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 36px;
+	/*margin: 10px 0 0 -20px;*/
+	margin: 20px 0 10px -10px;
+}
+
+.nickk{
+	margin-left: 300px;
+	font-size: 32px;
+	color: #e74c3c;
+	font-size: 1.0em;
+	display: inline-block;
+  	position: relative;
+
+/*	-webkit-transform: scale(.9);
+  	-moz-transform: scale(.9);
+  	transform: scale(.9);*/
+
+  	/*-webkit-animation: love .5s infinite linear alternate-reverse;
+  	-moz-animation: love .5s infinite linear alternate-reverse;
+  	animation: love .5s infinite linear alternate-reverse;*/
+}
+
+.msgText{
+	margin: -10px 0 0 -20px;
+	font-size:  18px;
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 100px;
+
+}
+
+.comma {
+	font-family: "Passion One", bold;
+	font-size: 35px;
+	color: #a6a6a6;
+	margin: -10px 10px 0 -10px;
+}
+.comma2 {
+	font-family: "Passion One", bold;
+	font-size: 35px;
+	color: #a6a6a6;
+	margin: -10px -10px 0 10px;
 }
