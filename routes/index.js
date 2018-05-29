@@ -7,13 +7,14 @@ var multer = require('multer');
 
 var dt = new Date();
 var randomVal;
-
+var check = false;
 
 var storage = multer.diskStorage({
     destination: (req, file, cb) => {
       cb(null, 'public/images/uploads')
     },
     filename: (req, file, cb) => {
+      check = true;
       randomVal = Math.floor((Math.random() * 1000) + 1);
       cb(null, dt.getMonth() + dt.getDate() + dt.getDay() + "-" + dt.getHours() + dt.getMinutes() + "-" + randomVal + (".jpg"));
     }
@@ -40,7 +41,15 @@ router.post('/addPost', upload.single('uImg'), function(req, res, next){
 		var desc = req.body.uMessage;
 		var img = req.body.uImg;
 		console.log("randomVal: " + randomVal);
-		var imgin = dt.getMonth() + dt.getDate() + dt.getDay() + "-" + dt.getHours() + dt.getMinutes() + "-" + randomVal + (".jpg");
+
+		var imgin;
+		if (check == true){ 
+			imgin= dt.getMonth() + dt.getDate() + dt.getDay() + "-" + dt.getHours() + dt.getMinutes() + "-" + randomVal + (".jpg");
+			check = false;
+		}
+		else{
+			imgin = 'placeholder4.jpg';
+		}
 
 		console.log (name);
 		console.log (imgin);
