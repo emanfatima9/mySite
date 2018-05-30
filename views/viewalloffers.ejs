@@ -5,6 +5,12 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<title>Eman's Site</title>
+	<script type="text/javascript">
+		function putImage(){
+			document.getElementById("meme1").innerHTML = "<img src = 'images/fun/meme1.jpg' class = 'meme11'>"
+			document.getElementById("meme2").innerHTML = "<img src = 'images/fun/meme2.jpg' class = 'meme22'>"
+		}
+	</script>
 </head>
 <body>
 	<div class = "topdiv">
@@ -41,21 +47,13 @@
 	<% } else{ %>
       <p style="color: red; margin: 10px 0 0 40px">*Sorry, no posts have been made so far.</p>
     <% } %>
-	<!--<div class = "maincontainer">
-		<div class="blur"></div>
-		<div class = "imageDiv">
-			<img src="/images/bg_bd.jpg" id = "img">
-		</div>
-		<div class = "allText">
-			<div class = "personname">
-				<h1>Final Destination - nsadfjew</h1>
-			</div>
-			<div class = "message">
-				<p>sdjkhfner fsdkwjbfvehjv wefuoerbvherjwlkc erwuibverhwfjc ewrcbwernc ewrcu werjer cuoerwbc werj cjbewr erw ceowrchewrb c
-				cnewjrbnerwhjkcberwjcb erwerc ewrjoc ewrcwejrc wer c ewrc;wer cjewrc wer cwerh cwerhc wer cwer c ewrcjb erc webjc ebwc cw
-			enc ewrnc werjnc erwhj fejrkw cerjk cerw ejrbf vcsbdvjerw ver wvcernj vclewbfnv  werbver wnb v erwbn vewr vbewrn vwerbjv webrj vv</p>
-			</div>
-		</div>
-	</div>-->
+
+
+    <div class = "extras">
+    	<button onclick="putImage()" class ="button1">Click me :p</button>
+    	<div id = "meme1"></div>
+    	<div id = "meme2"></div>
+    </div>
+	
 </body>
 </html> 
